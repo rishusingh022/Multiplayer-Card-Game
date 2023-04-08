@@ -16,3 +16,5 @@ To install the application, follow these steps:
 1. Clone the repository to your local machine using `https://github.com/rishusingh022/Multiplayer-Card-Game.git`
 2. Navigate to the project directory using `cd Multiplayer-Card-Game`
 3. Install the dependencies using `npm start`
+
+<img width="532" alt="Screenshot 2023-04-08 at 2 26 10 PM" src="https://user-images.githubusercontent.com/60195863/230712975-fe286f54-4561-4fdf-8a79-40b1eef52409.png">
