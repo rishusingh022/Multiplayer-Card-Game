@@ -42,7 +42,12 @@ const playGame = () => {
   }
   let currentPlayerIndex = parseInt(prompt('Enter your choice: ')) - 1;
   let gameOver = false;
+  let drawCount = 0;
   while (!gameOver) {
+    if(drawCount >= 208){
+      console.log('Game Over due to draw');
+      break;
+    }
     const currentPlayer = players[currentPlayerIndex];
     const topCard = discardPile[discardPile.length - 1];
     let canPlayCard = false;
@@ -57,6 +62,7 @@ const playGame = () => {
       const card = playCard(currentPlayer.hand, cardIndex, discardPile);
       console.log(`${currentPlayer.name} played ${card.rank} of ${card.suit}`);
     } else {
+      drawCount++;
       drawCard(deck, drawPile, currentPlayer.hand);
       console.log(`${currentPlayer.name} drew a card`);
     }
