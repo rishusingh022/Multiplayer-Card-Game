@@ -1,11 +1,11 @@
 const prompt = require('prompt-sync')();
-const DECK = require('./src/constant/deck');
+const DECK = require('./constant/deck');
 let PLAYER_COUNT = 4;
-const suffleDeck = require('./src/utils/suffleDeck');
-const dealCards = require('./src/utils/dealCards');
-const canPlay = require('./src/utils/canPlay');
-const { getNextPlayerIndex, getWinnerIndex } = require('./src/utils/getIndex');
-const playCard = require('./src/utils/playCards');
+const suffleDeck = require('./utils/suffleDeck');
+const dealCards = require('./utils/dealCards');
+const canPlay = require('./utils/canPlay');
+const { getNextPlayerIndex, getWinnerIndex } = require('./utils/getIndex');
+const playCard = require('./utils/playCards');
 
 const drawCard = (deck, drawPile, hand) => {
   if (deck.length === 0) {
